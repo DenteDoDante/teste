@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Teste</title>
+  </head>
+  <body>
+    <form action="/teste" method="post">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" />
+      <button type="submit">Enviar</button>
+    </form>
+    <label id="mensagem" th:text="${mensagem}"></label>
+  </body>
+</html>
